@@ -1,0 +1,27 @@
+Proyecto: PROYECTO ARRANQUE MOTOR POZO FAMAE
+Jefe: CARLOS LAGUNAS
+Total del presupuesto: $1,138,984.00
+
+Listado de Items:
+2 c/u - Rele de Nivel 3 sondas - PROVEEDOR REF: RHONA - PRECIO REF: $122,434.00
+1 c/u - ITM 4x40A 10KA C HIUNDAY - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $20,040.00
+2 c/u - Porta fusible a riel DIN HYUNDAI - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $2,500.00
+3 c/u - Fusible cilindrico 2A HYUNDAI - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $300.00
+1 c/u - Partidor suave 30HP/22Kw/ 45A - PROVEEDOR REF: CONTROLCLICK - PRECIO REF: $501,285.00
+1 c/u - Barra repartidora 8 puntos 125A STANDAR - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $5,850.00
+4 c/u - Borne de conexión 16mm a riel DIN - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $598.00
+10 c/u - Borne de conexión 4mm a riel DIN - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $210.00
+1 c/u - Tapa de borne 16mm - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $294.00
+1 c/u - Tapa de borne 4mm - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $210.00
+10 c/u - Tope de borne riel DIN - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $185.00
+4 c/u - Luz piloto roja 22mm - PROVEEDOR REF: RHONA - PRECIO REF: $2,204.00
+1 c/u - Luz piloto verde 22mm - PROVEEDOR REF: RHONA - PRECIO REF: $2,204.00
+1 c/u - Botonera tipo hongo de emergencia 40mm con retención - PROVEEDOR REF: RHONA - PRECIO REF: $7,699.00
+1 c/u - Botonera verde 22mm NO - PROVEEDOR REF: RHONA - PRECIO REF: $4,908.00
+1 c/u - Botonera roja 22mm NO - PROVEEDOR REF: RHONA - PRECIO REF: $4,908.00
+2 c/u - Canaleta plastica 60x40x2000mm - PROVEEDOR REF: RHONA - PRECIO REF: $7,590.00
+1 c/u - Tablero metálico 1000x600x300mm c/n contrapuerta - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $147,000.00
+2 m - Riel DIN 42mm - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $990.00
+1 c/u - Rele asimetria STANDAR - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $15,000.00
+1 c/u - PLC, LOGO V8 12/24 RCE SIEMENS – Display – 8 Entradas 12-24VDC/4 Salidas relé – 12-24VDC - PROVEEDOR REF: OBINU - PRECIO REF: $145,000.00
+100 c/u - Amarra plástica 200mm - PROVEEDOR REF: INSEVENTAS - PRECIO REF: $15.00

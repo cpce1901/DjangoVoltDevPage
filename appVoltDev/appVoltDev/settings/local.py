@@ -24,3 +24,14 @@ STATICFILES_DIRS = [BASE_DIR / "static/"]
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media_local/"
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'VoltDev API',
+    'DESCRIPTION': 'Sistema de calculos y control de ingenieria electrica',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
