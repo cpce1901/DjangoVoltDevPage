@@ -5,10 +5,14 @@ module.exports = {
     '../static/**/*.js'
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      "exo": ['"exo 2"'],
-      "rale": ['"Raleway"'],
+    extend: {
+      backgroundImage:{
+        "main": "url('/static/img/esp-32.jpg')",
+      },
+      fontFamily: {
+        "exo": ['"exo 2"'],
+        "rale": ['"Raleway"'],
+      },
     },
   },
   plugins: [],

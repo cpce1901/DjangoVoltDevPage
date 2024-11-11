@@ -4,12 +4,109 @@
 <!-- Carga archivos estaticos -->
 {% load static %}
 
+<!-- Titulo -->
 {% block title %}Inicio | VoltDev | cpce{% endblock title %}
   
-
+<!-- Contenido -->
 {% block content %}
 
-<h1>Hello</h1>
+<main class="w-full min-h-screen flex flex-col items-center">
+
+    <!-- Sección Presentación -->
+    <section class="w-full min-h-[70vh] flex items-center justify-center relative">
+        <!-- Fondo de la sección -->
+        <div class="absolute inset-0 bg-main bg-cover bg-no-repeat bg-bottom bg-fixed"></div>
+        <!-- Capa de superposición -->
+        <div class="absolute inset-0 bg-slate-800 bg-opacity-90"></div>
+
+        <div class="container relative mx-auto flex flex-col md:flex-row items-center justify-around gap-8 p-6 z-10">
+            <!-- Texto de presentación -->
+            <div class="flex flex-col items-start gap-6 max-w-md text-white">
+                <h1 class="text-4xl font-exo leading-tight">
+                    Hola, Soy Claudio Carreño<br>
+                    <span class="text-red-500">Desarrollador de soluciones tecnológicas.</span>
+                </h1>
+
+                <p class="text-lg">
+                    Soy un apasionado y convencido de que la tecnología es una herramienta versátil que puede aplicarse
+                    en
+                    diversas especialidades, desde la industria y la construcción, hasta el ámbito social y los
+                    servicios
+                    cotidianos.
+
+                    Me especializo en sistemas de IoT, abarcando tanto la electrónica como la programación de estos
+                    sistemas.
+                    Además, desarrollo aplicaciones web y móviles.
+                </p>
+
+                <a href="{{ personal_cv.doc.url }}" target="_blank"
+                    class="text-white font-semibold px-6 py-3 bg-red-500 hover:bg-red-600 hover:scale-105 rounded-lg transition-all duration-300 mt-5">
+                    Descargar CV
+                </a>
+            </div>
+
+            <!-- Imagen personal -->
+            <div class="rounded-full bg-gray-200 overflow-hidden w-80 h-80 flex-shrink-0">
+                <img src="{{ personal_imagen.imagen.url }}" alt="Imagen de Claudio"
+                    class="object-cover object-center w-full h-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="w-full min-h-[70vh] flex items-center justify-center">
+        <div class="container mx-auto flex flex-col items-center justify-around gap-8 p-6">
+            <h3 class="text-6xl mt-6 font-exo font-semibold tracking-wide text-center mb-8">Proyectos</h3>
+            <div class="container mx-auto flex flex-col justify-around gap-8">
+                <!-- Tarjeta del Proyecto 1 -->
+                {% for project in projects  reversed %}
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    <!-- Imagen del proyecto -->
+                    <div class="flex-none w-full md:w-80 h-80 overflow-hidden rounded-lg">
+
+                        {% if project.image %}
+                        <img src="{{ project.image.url }}" alt="Imagen de proyecto"
+                            class="object-cover object-center h-full w-full">
+                        {% else %}
+                        <div class="w-full h-full bg-sky-200"></div>
+                        {% endif %}
+
+                    </div>
+                    <!-- Contenido del proyecto -->
+                    <div class="flex flex-col justify-between items-start gap-8 h-full flex-1">
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-5xl font-exo font-bold mb-2">{{ project.title }}</h4>
+                            <div class="flex gap-10 items-center justify-start">
+                                <p
+                                    class="px-6 py-2 {% cycle 'bg-indigo-500' 'bg-sky-500' 'bg-red-500' %} rounded-full text-xl text-white">
+                                    {{ project.year }}</p>
+                                <!-- Mostrar todos los valores del campo M2M -->
+                                <h5 class="text-2xl font-medium text-gray-600">
+                                    {% for item in project.tags.all %}
+                                    {{ item }}{% if not forloop.last %} - {% endif %}
+                                    {% endfor %}
+                                </h5>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-lg line-clamp-4">
+                            {{ project.details }}
+                        </p>
+                    </div>
+                </div>
+                <!-- Línea divisoria -->
+                <div class="border-t border-gray-300 my-8"></div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section class="w-full min-h-[60vh] bg-sky-50 flex">
+        <div class="container mx-auto">
+            <h3 class="text-2xl mt-6 font-rale font-semibold tracking-wide">Contactos</h3>
+        </div>
+    </section>
+</main>
     
 {% endblock content %}
     
