@@ -1,6 +1,7 @@
 from typing import Iterable
 from django.db import models
 
+
 class Boss(models.Model):
     name = models.CharField(max_length=32)
 

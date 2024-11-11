@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
+
 class PersonalImagen(models.Model):
     name = models.CharField('Nombre', max_length=100)
     imagen = models.ImageField('Imagen Personal', upload_to='personal/')

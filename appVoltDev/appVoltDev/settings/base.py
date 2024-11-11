@@ -4,18 +4,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = 'django-insecure-8f+!x@bh@80$43^^guvj(!!r31=(1u*%-l_xy&&0^28)qdv2&f'
 
-INSTALLED_APPS = [
+
+BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'drf_spectacular',
+    'django.contrib.sitemaps',
+]
+
+LOCAL_APPS = [
     'apps.core',
     'apps.api'
 ]
+
+THIRD_APPS = [
+    'rest_framework',
+    'drf_spectacular',
+    'import_export',
+]
+
+INSTALLED_APPS = THIRD_APPS + BASE_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -68,7 +79,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
